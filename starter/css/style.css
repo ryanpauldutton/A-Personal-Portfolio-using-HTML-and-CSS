@@ -1,0 +1,25 @@
+@font-face {
+  font-family: pangramSans;
+  src: url(../fonts/Pangram-Regular.woff);
+}
+
+* {
+  margin: 0 2vw;
+}
+
+body {
+  font-family: pangramSans;
+  font-size: 1vw;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+}
+
+p {
+  margin: 0;
+  font-family: pangramSans;
+}

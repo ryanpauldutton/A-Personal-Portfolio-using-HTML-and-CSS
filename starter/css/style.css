@@ -1,25 +1,283 @@
-@font-face {
-  font-family: pangramSans;
-  src: url(../fonts/Pangram-Regular.woff);
-}
-
-* {
-  margin: 0 2vw;
-}
 
 body {
-  font-family: pangramSans;
-  font-size: 1vw;
+  font-size: 1.1111111111111112vw;
+  margin: 0 2vw;
+  font-family: monumentLight;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  overflow-x: hidden;
+ }
+ /* Max Font Size */
+ @media screen and (min-width:1920px) {
+  body {font-size: 1.3333333333333333rem;}
+ }
+ /* Container Max Width */
+ .container {
+   max-width: 90em;
+ }
+
+
+/* GENERIC ITEMS */
+* {
+
+  margin: 0;
+}
+
+body {
+
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: left;
+  padding:  20px 0 20px 2.5vw;
+
+}
+
+/* colours */
+.darkgrey {
+  color: #747c7c;
+}
+
+.midgrey {
+  color: #909696;
+}
+
+.lightgrey {
+  color: #acb0b0;
+}
+
+.bgdarkgrey {
+  background-color: #747c7c;
+}
+
+.bgmidgrey {
+  background-color: #909696;
+}
+
+.bglightgrey {
+  background-color: #acb0b0;
 }
 
 header {
+  padding: 0 2vw;
+  background-color: bisque;
+  justify-content: space-between;
   display: flex;
+  align-items: center;
+}
+
+.sr-only {
+  display: none;
 }
 
 p {
   margin: 0;
   font-family: pangramSans;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 10px);
+}
+
+.logo {
+  height: 100px;
+
+}
+
+.primary-header {}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(0, 0%, 100%, 0.2);
+  backdrop-filter: blur(1rem);
+}
+
+@media (max-width: 35em) {
+  .primary-navigation {
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+
+    --gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    z-index: 1000;
+    padding: min(30vh, 10rem) 2rem;
+    flex-direction: column;
+    background: hsl(0, 0%, 100%, 0.2);
+    backdrop-filter: blur(1rem);
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background: url(../images/hamburger.svg);
+    width: 5rem;
+    background-repeat: no-repeat;
+    border: 0;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+
+  }
+}
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+  background-image: url();
+}
+
+
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.linktype {
+  font-family: pangramSans;
+  font-weight: 700;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a>span {
+  font-weight: 300;
+  margin-inline-end: 0.75em;
+}
+
+.hero-banner {
+  height: 30vh;
+  background-color: blue;
+}
+
+/* PORTFOLIO */
+#work {
+  min-height: 50vh;
+  width: 100vw;
+  padding: 10vh 5vw;
+  background-color: #747c7c;
+}
+
+
+/* FLEX LAYOUTS */
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* GRID LAYOUT */
+
+.grid {
+  display: grid;
+}
+
+/* LIST WITH DIVIDERS */
+
+ul {
+  list-style-type: none;
+}
+
+
+/* RESOURCE LIST */
+
+.reslist {
+ 
+  display: block;
+  width: 50%;
+  align-items: left;
+  padding:0 0px;
+  margin:5px 0 0 0;
+  font-size:12px;
+  color:#999;
+  list-style-type: none;
+}
+
+.reslist li {
+ 
+  display: flex;
+  background-color: #909696;
+  padding: 40px 0;
+  border-bottom:1px solid #CCC;
+  list-style-position: outside;
+  overflow:hidden;
+  font-size: 12px;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.reslist li:hover {
+  background-color: blue;
+  list-style: none;
+}
+
+
+.reslist li a {
+  color: #333333;
+  display: block;
+ 
+  float: right;
+  font-family: pangramSans;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 5px 2.5vw;
+  text-decoration: none;
+  width: 238px;
+}
+.reslist li a:hover {
+  color: white;
+  display: block;
+  float: right;
+  font-family: monumentLight;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 10px 2.5vw;
+  text-decoration: none;
+  width: 238px;
+
+}
+
+
+.listholder {
+  width: 100vw;
+ display: grid;
+ grid-template-columns: auto auto auto auto;
+}
+
+.listholder > div {
+  width: 25%;
+  background-color: #747c7c;
+}
+
+.screenheight {
+  height: 100vh;
+  width: 100vw;
 }

@@ -6,30 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ryan Paul Dutton // Front End Web Developer</title>
+  <link rel="stylesheet" href="./css/fonts.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="nav.js" defer></script>
+  <script src="experiments.js" defer></script>
 </head>
 
 <body>
+
   <!-- main logo / nav -->
+  <header class="bglightgrey">
+    <img src="./images/logo.svg" alt="rp logo" class="logo">
 
-  <header>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Home</span>
+    </button>
 
-    <h1>Ryan Paul Dutton</h1>
-    <nav id="topNav">
-      <ul>
-        <li>
-          <p>hello there</p>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li class="active">
+          <a class="linktype" href="index.html">
+            <span aria-hidden="true">00</span>Home
+          </a>
         </li>
-        <li></li>
-        <li></li>
+
+        <li>
+          <a class="linktype" href="work.html">
+            <span aria-hidden="true">01</span>Work
+          </a>
+        </li>
+
+        <li>
+          <a class="linktype" href="about.html">
+            <span aria-hidden="true">02</span>About
+          </a>
+        </li>
+
+        <li>
+          <a class="linktype" href="contact.html">
+            <span aria-hidden="true">03</span>Contact
+          </a>
+        </li>
+
       </ul>
+
     </nav>
+
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+  <section class="hero-banner bgdarkgrey">
+    <div class="flexCenter">
+      <h1 class="lightgrey">Hello and welcome!</h1>
     </div>
   </section>
 
@@ -40,14 +68,40 @@
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+
+
+    <section class="page-section grid" id="work">
+
       <h2>Work</h2>
+      <!-- Portfolio  1 -->
+      <div></div>
+
+    </section>
+
+    <section>
+      <h2>Personal Resources</h2>
+      <h3>Typography and Scaling</h3>
+      <div class="listholder"></div>
+      <div>
+        <ul class="reslist">
+          <li><a class="darkgrey" target="_blank" href="https://pangrampangram.com/">Pangram Pangram</a></li>
+          <li><a class="darkgrey" target="_blank" href="https://wizardry-technique.webflow.io/">Wizardry Fluid Type System</a></li>
+          <li><a class="darkgrey" target="_blank" href="https://pangrampangram.com/">Pangram Pangram</a></li>
+          <li><a class="darkgrey" target="_blank" href="https://pangrampangram.com/">Pangram Pangram</a></li>
+          
+        </ul>
+      </div>
+      </div>
+
+
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
     </section>
+
+    <div class="screenheight bgdarkgrey"></div>
   </main>
 </body>
 

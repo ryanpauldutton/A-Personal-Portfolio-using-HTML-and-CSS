@@ -2,6 +2,22 @@
     font-family: pangramSans;
     src: url(../fonts/Pangram-Regular.woff);
   }
+
+  @font-face {
+    font-family: pangramSansBold;
+    src: url(../fonts/Pangram-Bold.woff);
+  }
+
+  @font-face {
+    font-family: pangramSansBlack;
+    src: url(../fonts/Pangram-Black.woff);
+  }
+  
+  @font-face {
+    font-family: pangramSansXlight;
+    src: url(../fonts/Pangram-ExtraLight.woff);
+  }
+  
   
   @font-face {
     font-family: monumentLight;

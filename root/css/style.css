@@ -22,8 +22,7 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 0.5em 0.5em 1em rgba(0,0,0,0.1),
-            0.25em 0.25em 0.5em rgba(0,0,0,0.2);:
+  
 }
 
 @media (min-width: 800px) {
@@ -59,6 +58,28 @@ section {
 img {
     display: block;
     max-width: 100%;
+}
+
+a{
+    color: #16e0bd;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  li{
+    display: inline;
+    padding: 20px;
+  }
+
+.nav__list{
+    display: flex;
 }
 
 strong {
@@ -139,6 +160,9 @@ h3 {
     display: block;
 }
 
+.portfolio__item-xl{
+width: 100vw;
+}
 /* HERO SECTION */
 
 .hero {

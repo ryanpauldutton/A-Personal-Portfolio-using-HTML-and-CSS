@@ -12,7 +12,7 @@
     <a href="https://github.com/ryanpauldutton/A-Personal-Portfolio-using-HTML-and-CSS"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View GH Pages</a>
+    <a href="https://ryanpauldutton.github.io/A-Personal-Portfolio-using-HTML-and-CSS/">View GH Pages</a>
     ·
 
   </p>
